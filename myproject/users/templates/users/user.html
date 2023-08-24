@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="jumbotron">
+        <h1>Who is the going to get ASSIGNED</h1>
+        <form method="POST">
+            {{form.hidden_tag()}}
+            {{form.name.label}}{{form.name()}}
+            {{form.taskId.label}}{{form.taskId()}}
+            {{form.submit()}}
+
+        </form>
+    </div>
+
+{% endblock %}
